@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    display: flex;
+    width: 100%;
+    min-width: 820px;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+img {
+    height: 50px;
+}
+
+.social-links {
+    display: flex;
+    margin-left: 15%;
+}
+
+.fb {
+    background: url(../images/Social_Media.png) 101px -11.5px;
+    width: 35px;
+    height: 35px;
+    border-radius: 6px;
+    border: 2px solid white;
+}
+
+.insta {
+    background: url(../images/Social_Media.png) -12.5px -11.5px;
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    border-radius: 6px;
+    border: 2px solid white;
+}
+
+.wtsp {
+    background: url(../images/Social_Media.png) -12.5px -65px;
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    border-radius: 6px;
+    border: 2px solid white;
+}
+
+.social-links a:hover {
+    box-shadow: 0px 0px 5px 1px white;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border-radius: 10px;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 5px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid black;
+    background-color: white;
+}
+
+nav a.active {
+    font-weight: bold;
+    background-color: yellow;
+}
+
+
+nav a:hover {
+    background-color: yellow;
+}
+
+form.logout-btn {
+    background-color: black;
+    border-radius: 20px;
+}
+
+button.logout-btn {
+    padding: 5px 5px;
+    color: black;
+    background-color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+button.logout-btn:hover {
+    background-color: yellow;
+}
+
+
+/* Footer */
+footer {
+    background-color: black;
+    width: 100%;
+    min-width: 820px;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: 53px;
+    bottom: 0;
+}
+
+footer a {
+    color: lightblue;
+}
+
+
+/*_________________________________________*/
+
+
+h1 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Main Styling */
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 324px;
+    margin-top: 17.5px;
+}
+
+/* Styling for Filter Bar */
+.filter-bar {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: #f4f4f4;
+}
+
+.filter-bar select, .filter-bar input, .filter-bar button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #333;
+}
+
+.filter-bar select {
+    width: 200px;
+}
+
+.filter-bar button {
+    background-color: #1a1a1d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.filter-bar button:hover {
+    background-color: #333;
+}
+
+
+
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+
+/* Product-List */
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-card {
+    border: 3px solid black;
+    border-radius: 5px;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 5px solid green;
+    padding-bottom: 5px;
+}
+
+.product-card h2 {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.product-card p {
+    color: #1a1a1d;
+    font-weight: bold;
+}
+
+.product-card button {
+    background-color: #1a1a1d;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5%;
+}
+
+.product-card button:hover {
+    background-color: #333;
+}
+
+a.detail-span {
+    float: right;
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+}
+
+
+/* Cart Message Styles */
+.cart-message {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+
+.no-items {
+    font-size: 1.5rem;
+    color: #777;
+    text-align: center;
+    margin: 20px 0;
+}

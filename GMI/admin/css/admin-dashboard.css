@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+body {
+    display: flex;  /* new */
+    flex-direction: column;  /* new */
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    display: flex;
+    width: 100%;
+    min-width: 820px;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+img {
+    height: 50px;
+}
+
+header h1 {
+    min-width: 230px;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border-radius: 10px;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 5px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid black;
+    background-color: white;
+}
+
+nav a.active {
+    font-weight: bold;
+    background-color: yellow;
+}
+
+nav a:hover {
+    background-color: yellow;
+}
+
+form.logout-frm {
+    background-color: black;
+    border-radius: 20px;
+}
+
+button.logout-btn {
+    padding: 5px 5px;
+    color: black;
+    background-color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+button.logout-btn:hover {
+    background-color: yellow;
+}
+
+
+/* Footer */
+footer {
+    background-color: black;
+    width: 100%;
+    min-width: 820px;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: 51px;
+    bottom: 0;
+}
+
+footer a {
+    color: lightblue;
+}
+
+
+/*_________________________________________*/
+
+
+/* Main Styling */
+main {
+    flex: 1;              /* new */
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Section Styling */
+section {
+    margin-top: 20px;
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    min-width: 400px;
+}
+
+/* Form and Input Fields Styling */
+input[type="text"],
+input[type="number"],
+input[type="file"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+}
+
+#products select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+input:invalid {
+    border-color: red;
+}
+input:invalid:focus {
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+
+/* Add product button style */
+.add-product-btn {
+    background-color: #333;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.add-product-btn:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+    background-color: #555;
+}
+
+.add-product-btn:focus, a:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+}
+
+
+/* Product List Styling */
+#div1 {
+    width: 100%;
+    min-width: 720px;
+    height: 50px;
+}
+
+#div2 {
+    width: fit-content;
+    height: 40px;
+    float: right;
+}
+
+#product-list-section select {
+    width: 140px;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+}
+
+#search-box {
+    width: 220px;
+    height: 40px;
+    margin-top: 0;
+}
+
+#product-list {
+    padding: 0;
+    padding-left: 30px;   /* when #product-list li---not display flex */
+    margin-top: 10px;
+}
+
+#product-list li {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#product-list li:hover {
+    background-color: #f1f1f1;
+}
+
+#product-list li:last-child {
+    border-bottom: none;
+}
+
+
+/* Edit Button Styling */
+.edit-btn {
+    background-color: blue;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    cursor: pointer;
+    float: right;         /* when #product-list li---not display flex */
+    margin-top: -4px;     /* when #product-list li---not display flex */
+}
+
+.edit-btn:hover {
+    background-color: darkblue;
+}
+
+
+/* Delete Button Styling */
+.delete-btn {
+    background-color: red;
+    color: #fff;
+    border: none;
+    margin-left: 10px;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    cursor: pointer;
+    float: right;         /* when #product-list li---not display flex */
+    margin-top: -4px;     /* when #product-list li---not display flex */
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}
+
+
+/* Save Changes button style */
+.save-changes-btn {
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.save-changes-btn:hover {
+    background-color: darkorange;
+}
+
