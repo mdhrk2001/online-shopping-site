@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    padding: 10px;
+    background-color: #1a1a1d;
+    color: white;
+    text-align: left;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main Styling */
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 324px;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 2px solid red;
+}
+
+.product-details img {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    border: 5px solid green;
+}
+
+/* Featured Photo Slideshow */
+.featured-slideshow {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px 0;
+    position: relative;
+    border: 2px solid red;
+}
+
+.slideshow-container {
+    width: 100%;
+    max-width: 1000px;
+    height: 340px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    background-color: #e8e8e8;
+    border: 5px solid green;
+}
+
+.slideshow-container .slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.slideshow-container .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.slideshow-navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.slideshow-navigation span {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    user-select: none;
+    font-size: 24px;
+}
+
+/* Product Info */
+.product-info {
+    margin-left: 20px;
+}
+
+.product-info h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product-info button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #1a1a1d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-info button:hover {
+    background-color: #333;
+}
+
+.cart-message {
+    display: none;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    z-index: 1000;
+}

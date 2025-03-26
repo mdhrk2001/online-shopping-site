@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    display: flex;
+    width: 100%;
+    min-width: 820px;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+img {
+    height: 50px;
+}
+
+header h1 {
+    min-width: 230px;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border-radius: 10px;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 5px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid black;
+    background-color: white;
+}
+
+nav a.active {
+    font-weight: bold;
+    background-color: yellow;
+}
+
+
+nav a:hover {
+    background-color: yellow;
+}
+
+form.logout-frm {
+    background-color: black;
+    border-radius: 20px;
+}
+
+button.logout-btn {
+    padding: 5px 5px;
+    color: black;
+    background-color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+button.logout-btn:hover {
+    background-color: yellow;
+}
+
+
+/* Footer */
+footer {
+    background-color: black;
+    width: 100%;
+    min-width: 820px;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: 53px;
+    bottom: 0;
+}
+
+footer a {
+    color: lightblue;
+}
+
+
+/*_________________________________________*/
+
+
+/* Main Styling */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    margin-top: 30px;
+    font-family: Lucida Handwriting;
+    font-size: 2em;
+}
+
+.col1 {
+    color: green;
+    font-family: Lucida Handwriting;
+}
+
+.col2 {
+    color: blue;
+    font-family: Lucida Handwriting;
+}
+    
+.col3 {
+    color: yellow;
+    font-family: Lucida Handwriting;
+}
+
+
+/* Styles for div of registration form */
+div.contactdiv {
+    background-color: rgb(0, 122, 144, 0.1);
+    border: 2px solid black;
+    padding: 20px 10px;
+    border-radius: 8px;
+    width: 450px;
+    text-align: center;
+    margin-top:30px;
+}
+
+.contactdiv h3{
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+input.conts {
+    width: 88%;
+    margin: 5px 0;
+    padding: 7px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.conts:focus {
+    border: 2px solid black;
+    background-color: yellow;
+}
+
+
+#subbutton {
+    border: 2px solid gray;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: gold;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#subdiv {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 43px;
+    border-radius: 10px;
+}
+
+form.contactform:valid #subdiv #subbutton {
+    cursor: pointer;
+    background-color: gold;
+}
+
+form.contactform:invalid #subdiv #subbutton {
+    cursor: not-allowed;
+    background-color: gold;
+    color: rgb(82, 82, 82);
+}
+
+form.contactform:valid #subdiv #subbutton:hover {
+    background-color: yellow;
+    transform: scale(1.02);
+    border: 2px solid black;
+}
+
+.log-ref {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.log-ref a{
+    color: blue;
+}
+
+.log-ref a:active{
+    color: red;
+}
+
+#backbutton {
+    background-color: white;
+    margin-top: 10%;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    position: relative;
+}
+
+#backbutton:hover {
+    background-color: yellow;
+    box-shadow: 0px 0px 0px 1px black;
+    cursor: pointer;
+}
+
+
+/* Style for left "Show Password" icon */
+.toggle-password-left {
+    position: relative;
+    cursor: pointer;
+    margin-right: 402px;
+    top: -35px; /* Adjust position relative to input */
+    font-size: 1em;
+    color: black;
+    user-select: none;
+}
+
+.toggle-password-left:hover {
+    color: #333;
+}
+
+/* Style for right "Show Password" icon */
+.toggle-password-right {
+    position: relative;
+    cursor: pointer;
+    margin-left: 402px;
+    top: -55px; /* Adjust position relative to input */
+    font-size: 1em;
+    color: black;
+    user-select: none;
+}
+
+.toggle-password-right:hover {
+    color: #333;
+}
+
+
+/* Added style for error message */
+.error {
+    color: red;
+    width: 100%;
+    background-color: white;
+    border: 2px solid red;
+    box-shadow: inset 0px 0px 4px 1px red;
+    padding: 8px;
+    text-align: center;
+    margin-top: -40px;
+    margin-bottom: 5px;
+}
